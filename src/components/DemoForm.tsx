@@ -8,9 +8,17 @@ export default function DemoForm() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setStatus("sending");
-    // TODO: wire to your backend / Resend / Formspree
-    await new Promise((r) => setTimeout(r, 800));
-    setStatus("sent");
+    try {
+      const res = await fetch("/api/demo", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+      if (!res.ok) throw new Error("failed");
+      setStatus("sent");
+    } catch {
+      setStatus("error");
+    }
   };
 
   return (
@@ -50,6 +58,12 @@ export default function DemoForm() {
 
           {/* Form */}
           <div className="card-border bg-[#1e293b]/60 rounded-2xl p-8">
+            {status === "error" && (
+              <div className="mb-4 bg-red-500/10 border border-red-500/20 text-red-400 text-sm rounded-lg px-4 py-3">
+                Something went wrong — please email us directly at{" "}
+                <a href="mailto:ben@kelvex.io" className="underline">ben@kelvex.io</a>
+              </div>
+            )}
             {status === "sent" ? (
               <div className="flex flex-col items-center justify-center gap-4 py-12 text-center">
                 <div className="w-14 h-14 bg-teal-500/15 border border-teal-500/30 rounded-full flex items-center justify-center">
