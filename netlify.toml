@@ -1,6 +1,12 @@
 [build]
-  command = "npm run build"
-  publish = ".next"
+  publish = "."
 
-[build.environment]
-  NODE_VERSION = "20"
+[[redirects]]
+  from = "/demo"
+  to = "/demo.html"
+  status = 200
+
+[[redirects]]
+  from = "/pricing"
+  to = "/pricing.html"
+  status = 200
