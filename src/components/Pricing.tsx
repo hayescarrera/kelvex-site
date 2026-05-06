@@ -12,7 +12,7 @@ const plans = [
       "Basic compliance reports",
       "Email support",
     ],
-    cta: "Start free trial",
+    cta: "Request a demo",
     highlighted: false,
   },
   {
@@ -30,7 +30,7 @@ const plans = [
       "Energy demand analysis",
       "Priority support",
     ],
-    cta: "Start free trial",
+    cta: "Request a demo",
     highlighted: true,
   },
   {
@@ -64,11 +64,11 @@ export default function Pricing() {
             Transparent pricing
           </div>
           <h2 className="text-4xl sm:text-5xl font-bold text-white tracking-tight mb-4">
-            Start free, scale as you grow
+            Simple, predictable pricing
           </h2>
           <p className="text-slate-400 text-lg max-w-xl mx-auto">
-            14-day free trial on all plans. No credit card required.
-            Cancel any time.
+            No per-sensor fees. No surprise charges.
+            Talk to us about the right plan for your operation.
           </p>
         </div>
 

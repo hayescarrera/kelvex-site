@@ -45,7 +45,7 @@ export default function Hero() {
 
         {/* Trust line */}
         <p className="text-xs text-slate-500 mb-12">
-          Trusted by food processors, 3PLs, pharmaceutical distributors, and biotech labs
+          Built for food processors, 3PLs, pharmaceutical distributors, and biotech labs
         </p>
 
         {/* Stats */}

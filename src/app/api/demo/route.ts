@@ -18,7 +18,7 @@ export async function POST(req: NextRequest) {
   try {
     // Notify Ben
     await resend.emails.send({
-      from: "Kelvex Demo <demo@kelvex.io>",
+      from: "Kelvex Demo <onboarding@resend.dev>",
       to: ["ben@thelinders.com"],
       subject: `Demo request — ${company} (${industry || "unknown industry"})`,
       html: `
@@ -67,7 +67,7 @@ export async function POST(req: NextRequest) {
 
     // Confirm to prospect
     await resend.emails.send({
-      from: "Ben at Kelvex <ben@kelvex.io>",
+      from: "Ben at Kelvex <onboarding@resend.dev>",
       to: [email],
       subject: "Got your demo request — talk soon",
       html: `
