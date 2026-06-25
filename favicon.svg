@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- canvas background -->
+  <rect width="64" height="64" fill="#EDF1F0"/>
+  <!-- thin border -->
+  <rect x="1" y="1" width="62" height="62" stroke="#CDD4D2" stroke-width="1" fill="none"/>
+  <!-- wordmark: "K" approximated as paths at center, teal square node -->
+  <!-- teal square mark, bottom-right anchor -->
+  <rect x="42" y="42" width="10" height="10" fill="#0A8E80"/>
+  <!-- measurement tick line -->
+  <line x1="8" y1="52" x2="52" y2="52" stroke="#CDD4D2" stroke-width="0.8"/>
+  <line x1="8" y1="49" x2="8" y2="52" stroke="#CDD4D2" stroke-width="1"/>
+  <line x1="22" y1="49" x2="22" y2="52" stroke="#CDD4D2" stroke-width="1"/>
+  <line x1="36" y1="46" x2="36" y2="52" stroke="#0A8E80" stroke-width="1"/>
+  <line x1="52" y1="49" x2="52" y2="52" stroke="#CDD4D2" stroke-width="1"/>
+  <!-- "K" letterform -->
+  <path d="M14 16 L14 40 M14 28 L26 16 M14 28 L28 40" stroke="#10161B" stroke-width="3.5" stroke-linecap="square"/>
+</svg>

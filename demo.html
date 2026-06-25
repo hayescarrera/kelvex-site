@@ -4,7 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Request a Demo — Kelvex</title>
-  <meta name="description" content="See Kelvex in action. Schedule a walkthrough tailored to your equipment and facilities." />
+  <meta name="description" content="See Kelvex in action. A focused 30-minute walkthrough tailored to your equipment and sites — no generic product tour." />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
@@ -16,17 +17,19 @@
 <header class="nav nav-solid" id="nav">
   <div class="nav-inner container">
     <a href="/" class="nav-logo">
-      <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
-        <rect width="28" height="28" rx="7" fill="#0f172a"/>
-        <path d="M4 14L7.5 14L10 8L14 20L18 8L20.5 14L24 14" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <svg width="28" height="28" viewBox="0 0 64 64" fill="none">
+        <path d="M32 4L56 18V46L32 60L8 46V18L32 4Z" fill="#0f172a"/>
+        <path d="M22 17V47" stroke="white" stroke-width="5.5" stroke-linecap="round"/>
+        <path d="M22 32L44 17" stroke="white" stroke-width="5.5" stroke-linecap="round"/>
+        <path d="M22 32L44 47" stroke="white" stroke-width="5.5" stroke-linecap="round"/>
+        <circle cx="22" cy="32" r="5" fill="#0369ea"/>
       </svg>
       Kelvex
     </a>
     <nav class="nav-links">
       <a href="/#platform">Platform</a>
       <a href="/#how-it-works">How it works</a>
-      <a href="/#integrations">Integrations</a>
-      <a href="pricing.html">Pricing</a>
+      <a href="/#integrations">Connectivity</a>
     </nav>
     <div class="nav-actions">
       <a href="https://app.kelvex.io" class="nav-signin">Sign in</a>
@@ -39,8 +42,7 @@
   <div class="mobile-drawer" id="drawer">
     <a href="/#platform">Platform</a>
     <a href="/#how-it-works">How it works</a>
-    <a href="/#integrations">Integrations</a>
-    <a href="pricing.html">Pricing</a>
+    <a href="/#integrations">Connectivity</a>
     <hr/>
     <a href="https://app.kelvex.io">Sign in</a>
     <a href="demo.html" class="nav-demo drawer-demo">Request demo</a>
@@ -52,9 +54,10 @@
   <div class="container">
     <span class="eyebrow">Request a demo</span>
     <h1>See it working on your type of equipment.</h1>
-    <p>Fill out the form and we'll reach out to schedule a walkthrough. We'll cover what your dashboard would look like, how alerts are configured, and what the energy controls can do for your utility bill.</p>
+    <p>Fill out the form and we'll reach out to schedule a walkthrough. We'll cover what leak alerts look like for your specific controllers, how compliance records are built automatically, and what getting live data actually involves.</p>
   </div>
 </section>
+
 
 <!-- ── Demo layout ───────────────────────────────────────── -->
 <div class="container demo-layout">
@@ -62,32 +65,40 @@
   <!-- Sidebar -->
   <div class="demo-sidebar">
     <h3>What to expect</h3>
-    <p>A focused 30-minute call with no sales pressure. We'll walk through your facilities, show you exactly how Kelvex maps to your equipment, and answer your questions directly.</p>
+    <p>A focused 30-minute call with no sales pressure. We look up your controller types ahead of time, walk you through a setup that matches your actual equipment, and answer your questions directly.</p>
 
     <div class="demo-points">
       <div class="demo-point">
-        <div class="demo-point-icon">📋</div>
+        <div class="demo-point-icon">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="1" y="3" width="14" height="10" rx="2" stroke="#0369ea" stroke-width="1.5"/><path d="M5 7h6M5 10h4" stroke="#0369ea" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </div>
         <div class="demo-point-text">
           <strong>Tailored walkthrough</strong>
-          <span>We look up your controller types ahead of time and show you data from similar equipment — not a generic product tour.</span>
+          <span>We review your controller types before the call and show you data from similar equipment — not a generic product tour.</span>
         </div>
       </div>
       <div class="demo-point">
-        <div class="demo-point-icon">⚡</div>
+        <div class="demo-point-icon">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 12 C4 6 8 4 14 5" stroke="#0369ea" stroke-width="1.5" stroke-linecap="round"/><path d="M10 2l4 3-3 3" stroke="#0369ea" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
         <div class="demo-point-text">
-          <strong>Energy savings estimate</strong>
-          <span>Based on your facility count and size, we'll show you what demand charge reduction typically looks like for an operation like yours.</span>
+          <strong>Refrigerant savings estimate</strong>
+          <span>Based on your site count, rack count, and refrigerant type, we'll show you what leak reduction typically looks like for an operation like yours.</span>
         </div>
       </div>
       <div class="demo-point">
-        <div class="demo-point-icon">🗓</div>
+        <div class="demo-point-icon">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 4.5" stroke="#0369ea" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
         <div class="demo-point-text">
           <strong>Clear next steps</strong>
-          <span>If it's a fit, we'll walk through what getting started looks like — timeline, what we need from you, and what you can expect on day one.</span>
+          <span>If it's a fit, we'll walk through what getting started looks like — timeline, what we need from you, and what live data looks like on day one.</span>
         </div>
       </div>
       <div class="demo-point">
-        <div class="demo-point-icon">✉️</div>
+        <div class="demo-point-icon">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6" stroke="#0369ea" stroke-width="1.5"/><path d="M8 5v3.5l2 1.5" stroke="#0369ea" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
         <div class="demo-point-text">
           <strong>Response within one business day</strong>
           <span>You'll hear from us directly — not a scheduling bot, not an SDR queue.</span>
@@ -114,7 +125,7 @@
       <div class="form-row">
         <div class="form-field">
           <label for="df-company">Company</label>
-          <input id="df-company" type="text" name="company" placeholder="Cold Storage Co." required />
+          <input id="df-company" type="text" name="company" placeholder="Regional Grocery Co." required />
         </div>
         <div class="form-field">
           <label for="df-phone">Phone <span class="optional">(optional)</span></label>
@@ -123,8 +134,20 @@
       </div>
       <div class="form-row">
         <div class="form-field">
-          <label for="df-facilities">Number of facilities</label>
-          <select id="df-facilities" name="facilities" required>
+          <label for="df-type">Type of operation</label>
+          <select id="df-type" name="operation_type" required>
+            <option value="">Select...</option>
+            <option value="grocery-independent">Independent grocery store</option>
+            <option value="grocery-regional">Regional grocery chain</option>
+            <option value="warehouse-3pl">Cold-storage warehouse / 3PL</option>
+            <option value="distributor">Distributor / wholesaler</option>
+            <option value="contractor">Refrigeration contractor</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label for="df-sites">Number of sites</label>
+          <select id="df-sites" name="sites" required>
             <option value="">Select...</option>
             <option value="1">1</option>
             <option value="2-5">2–5</option>
@@ -132,24 +155,14 @@
             <option value="20+">20+</option>
           </select>
         </div>
-        <div class="form-field">
-          <label for="df-doors">Approx. number of doors</label>
-          <select id="df-doors" name="doors">
-            <option value="">Select...</option>
-            <option value="<20">Under 20</option>
-            <option value="20-50">20–50</option>
-            <option value="50-150">50–150</option>
-            <option value="150+">150+</option>
-          </select>
-        </div>
       </div>
       <div class="form-field">
-        <label for="df-controllers">What controllers or equipment do you have?</label>
-        <input id="df-controllers" type="text" name="controllers" placeholder="e.g. Emerson E2, Danfoss, custom Modbus PLCs..." />
+        <label for="df-controllers">What controllers or equipment do you have? <span class="optional">(optional)</span></label>
+        <input id="df-controllers" type="text" name="controllers" placeholder="e.g. Emerson E2, Danfoss AK-SC, Modbus PLCs, not sure..." />
       </div>
       <div class="form-field">
         <label for="df-challenge">What's driving this for you right now? <span class="optional">(optional)</span></label>
-        <textarea id="df-challenge" name="challenge" placeholder="e.g. Our energy bills are out of control, we had a product loss event, we're expanding to new facilities..." rows="3"></textarea>
+        <textarea id="df-challenge" name="challenge" placeholder="e.g. We keep getting surprised by refrigerant adds, we had a leak that cost us $15k, we need audit records for an upcoming inspection..." rows="3"></textarea>
       </div>
       <input type="hidden" name="_subject" value="Kelvex Demo Request" />
       <button type="submit" class="btn-primary btn-full">Request a demo →</button>
@@ -163,34 +176,35 @@
   <div class="container footer-inner">
     <div class="footer-brand">
       <a href="/" class="nav-logo" style="color:#0f172a;">
-        <svg width="24" height="24" viewBox="0 0 28 28" fill="none">
-          <rect width="28" height="28" rx="7" fill="#0f172a"/>
-          <path d="M4 14L7.5 14L10 8L14 20L18 8L20.5 14L24 14" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <svg width="24" height="24" viewBox="0 0 64 64" fill="none">
+          <path d="M32 4L56 18V46L32 60L8 46V18L32 4Z" fill="#0f172a"/>
+          <path d="M22 17V47" stroke="white" stroke-width="5.5" stroke-linecap="round"/>
+          <path d="M22 32L44 17" stroke="white" stroke-width="5.5" stroke-linecap="round"/>
+          <path d="M22 32L44 47" stroke="white" stroke-width="5.5" stroke-linecap="round"/>
+          <circle cx="22" cy="32" r="5" fill="#0369ea"/>
         </svg>
         Kelvex
       </a>
-      <p>The operating system for cold storage facilities.</p>
+      <p>Refrigeration monitoring, leak detection, and compliance for grocery stores and cold-storage warehouses.</p>
     </div>
     <div class="footer-cols">
       <div class="footer-col">
         <div class="footer-col-head">Product</div>
         <a href="/#platform">Platform</a>
         <a href="/#how-it-works">How it works</a>
-        <a href="/#integrations">Integrations</a>
-        <a href="pricing.html">Pricing</a>
+        <a href="/#integrations">Connectivity</a>
         <a href="https://app.kelvex.io">Dashboard</a>
       </div>
       <div class="footer-col">
         <div class="footer-col-head">Company</div>
         <a href="demo.html">Book a demo</a>
         <a href="/#contact">Contact</a>
-        <a href="mailto:ben@kelvex.io?subject=Partnership">Partnerships</a>
+        <a href="demo.html">Partnerships</a>
       </div>
     </div>
   </div>
   <div class="container footer-bar">
-    <p>© 2025 Kelvex. All rights reserved.</p>
-    <p><a href="mailto:ben@kelvex.io">ben@kelvex.io</a></p>
+    <p>© 2026 Kelvex. All rights reserved.</p>
   </div>
 </footer>
 
@@ -217,7 +231,7 @@ if (form) {
         body: new URLSearchParams(new FormData(form)).toString()
       })
       if (res.ok) {
-        form.innerHTML = '<div class="form-success"><div class="form-success-icon">✓</div><h3>Thanks — we\'ll be in touch.</h3><p>Expect a reply within one business day. We\'ll reach out to find a time that works and confirm your equipment details beforehand.</p></div>'
+        form.innerHTML = '<div class="form-success"><div class="form-success-icon">✓</div><h3>Thanks — we\'ll be in touch.</h3><p>Expect a reply within one business day. We\'ll reach out to find a time that works and review your equipment details beforehand.</p></div>'
       } else {
         btn.textContent = orig
         btn.disabled = false
