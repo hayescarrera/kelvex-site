@@ -10,3 +10,4 @@
   from = "/pricing"
   to = "/demo"
   status = 301
+  force = true
