@@ -39,3 +39,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# local design backups — do not deploy
+*.v1
+*.v2
+*.v3

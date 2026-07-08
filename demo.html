@@ -1,65 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Request a Demo — Kelvex</title>
-  <meta name="description" content="See Kelvex in action. A focused 30-minute walkthrough tailored to your equipment and sites — no generic product tour." />
-  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book a demo — Kelvex</title>
+<meta name="description" content="See Kelvex on your type of equipment. A focused 30-minute walkthrough tailored to your controllers and sites — no generic product tour.">
+<link rel="canonical" href="https://kelvex.io/demo">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;450;500;550;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
 </head>
 <body>
 
-<!-- ── Nav ──────────────────────────────────────────────── -->
-<header class="nav nav-solid" id="nav">
-  <div class="nav-inner container">
-    <a href="/" class="nav-logo">
-      <svg width="28" height="28" viewBox="0 0 64 64" fill="none">
-        <path d="M32 4L56 18V46L32 60L8 46V18L32 4Z" fill="#0f172a"/>
-        <path d="M22 17V47" stroke="white" stroke-width="5.5" stroke-linecap="round"/>
-        <path d="M22 32L44 17" stroke="white" stroke-width="5.5" stroke-linecap="round"/>
-        <path d="M22 32L44 47" stroke="white" stroke-width="5.5" stroke-linecap="round"/>
-        <circle cx="22" cy="32" r="5" fill="#0369ea"/>
+<div class="progress" id="progress"></div>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="/" class="nav-logo" aria-label="Kelvex home">
+      <svg width="138" height="31" viewBox="0 0 186 42" role="img" aria-label="Kelvex">
+        <text x="0" y="26" font-family="Space Grotesk" font-weight="600" font-size="30" letter-spacing="1.1" fill="#0A1A33">KELVEX</text>
+        <line x1="1" y1="37" x2="178" y2="37" stroke="#0A1A33" stroke-width="1.4"/>
+        <line x1="1" y1="37" x2="1" y2="41" stroke="#0A1A33" stroke-width="1.4"/>
+        <line x1="36" y1="37" x2="36" y2="40" stroke="#7C88A0" stroke-width="1"/>
+        <line x1="71" y1="37" x2="71" y2="40" stroke="#7C88A0" stroke-width="1"/>
+        <line x1="106" y1="37" x2="106" y2="40" stroke="#7C88A0" stroke-width="1"/>
+        <line x1="178" y1="37" x2="178" y2="41" stroke="#0A1A33" stroke-width="1.4"/>
+        <line x1="141" y1="29" x2="141" y2="37" stroke="#2563EB" stroke-width="1.4"/>
+        <rect x="137.5" y="25.5" width="7" height="7" fill="#2563EB"/>
       </svg>
-      Kelvex
     </a>
-    <nav class="nav-links">
-      <a href="/#platform">Platform</a>
-      <a href="/#how-it-works">How it works</a>
-      <a href="/#integrations">Connectivity</a>
+    <nav class="nav-menu" aria-label="Main">
+      <div class="nav-item"><a href="/#tour">Product</a></div>
+      <div class="nav-item"><a href="/#solutions">Solutions</a></div>
+      <div class="nav-item"><a href="/#roi">ROI calculator</a></div>
+      <div class="nav-item"><a href="/#faq">FAQ</a></div>
     </nav>
     <div class="nav-actions">
       <a href="https://app.kelvex.io" class="nav-signin">Sign in</a>
-      <a href="demo.html" class="nav-demo">Request demo</a>
+      <a href="/demo" class="btn btn-primary btn-sm">Book a demo</a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M2 4.5h14M2 9h14M2 13.5h14" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+      </button>
     </div>
-    <button class="hamburger" id="hamburger" aria-label="Open menu">
-      <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M3 5h14M3 10h14M3 15h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
-    </button>
   </div>
   <div class="mobile-drawer" id="drawer">
-    <a href="/#platform">Platform</a>
-    <a href="/#how-it-works">How it works</a>
-    <a href="/#integrations">Connectivity</a>
-    <hr/>
-    <a href="https://app.kelvex.io">Sign in</a>
-    <a href="demo.html" class="nav-demo drawer-demo">Request demo</a>
+    <div class="grp">
+      <a href="/#tour">Product</a><a href="/#solutions">Solutions</a>
+      <a href="/#roi">ROI calculator</a><a href="/#faq">FAQ</a>
+      <a href="https://app.kelvex.io">Sign in</a>
+    </div>
   </div>
 </header>
 
-<!-- ── Page hero ─────────────────────────────────────────── -->
-<section class="page-hero">
+<!-- PAGE HERO -->
+<div class="page-hero">
   <div class="container">
-    <span class="eyebrow">Request a demo</span>
+    <span class="eyebrow">Book a demo</span>
     <h1>See it working on your type of equipment.</h1>
     <p>Fill out the form and we'll reach out to schedule a walkthrough. We'll cover what leak alerts look like for your specific controllers, how compliance records are built automatically, and what getting live data actually involves.</p>
   </div>
-</section>
+</div>
 
-
-<!-- ── Demo layout ───────────────────────────────────────── -->
+<!-- LAYOUT -->
 <div class="container demo-layout">
 
   <!-- Sidebar -->
@@ -67,42 +72,40 @@
     <h3>What to expect</h3>
     <p>A focused 30-minute call with no sales pressure. We look up your controller types ahead of time, walk you through a setup that matches your actual equipment, and answer your questions directly.</p>
 
-    <div class="demo-points">
-      <div class="demo-point">
-        <div class="demo-point-icon">
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="1" y="3" width="14" height="10" rx="2" stroke="#0369ea" stroke-width="1.5"/><path d="M5 7h6M5 10h4" stroke="#0369ea" stroke-width="1.5" stroke-linecap="round"/></svg>
-        </div>
-        <div class="demo-point-text">
-          <strong>Tailored walkthrough</strong>
-          <span>We review your controller types before the call and show you data from similar equipment — not a generic product tour.</span>
-        </div>
+    <div class="demo-point">
+      <div class="demo-point-icon">
+        <svg width="17" height="17" viewBox="0 0 16 16" fill="none"><rect x="1" y="3" width="14" height="10" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M5 7h6M5 10h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
       </div>
-      <div class="demo-point">
-        <div class="demo-point-icon">
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 12 C4 6 8 4 14 5" stroke="#0369ea" stroke-width="1.5" stroke-linecap="round"/><path d="M10 2l4 3-3 3" stroke="#0369ea" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </div>
-        <div class="demo-point-text">
-          <strong>Refrigerant savings estimate</strong>
-          <span>Based on your site count, rack count, and refrigerant type, we'll show you what leak reduction typically looks like for an operation like yours.</span>
-        </div>
+      <div class="demo-point-text">
+        <strong>Tailored walkthrough</strong>
+        <span>We review your controller types before the call and show you data from similar equipment — not a generic product tour.</span>
       </div>
-      <div class="demo-point">
-        <div class="demo-point-icon">
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 4.5" stroke="#0369ea" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </div>
-        <div class="demo-point-text">
-          <strong>Clear next steps</strong>
-          <span>If it's a fit, we'll walk through what getting started looks like — timeline, what we need from you, and what live data looks like on day one.</span>
-        </div>
+    </div>
+    <div class="demo-point">
+      <div class="demo-point-icon">
+        <svg width="17" height="17" viewBox="0 0 16 16" fill="none"><path d="M2 12 C4 6 8 4 14 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M10 2l4 3-3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
-      <div class="demo-point">
-        <div class="demo-point-icon">
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6" stroke="#0369ea" stroke-width="1.5"/><path d="M8 5v3.5l2 1.5" stroke="#0369ea" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </div>
-        <div class="demo-point-text">
-          <strong>Response within one business day</strong>
-          <span>You'll hear from us directly — not a scheduling bot, not an SDR queue.</span>
-        </div>
+      <div class="demo-point-text">
+        <strong>Refrigerant savings estimate</strong>
+        <span>Based on your site count, rack count, and refrigerant type, we'll show you what leak reduction typically looks like for an operation like yours.</span>
+      </div>
+    </div>
+    <div class="demo-point">
+      <div class="demo-point-icon">
+        <svg width="17" height="17" viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div class="demo-point-text">
+        <strong>Clear next steps</strong>
+        <span>If it's a fit, we'll walk through what getting started looks like — timeline, what we need from you, and what live data looks like on day one.</span>
+      </div>
+    </div>
+    <div class="demo-point">
+      <div class="demo-point-icon">
+        <svg width="17" height="17" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="1.5"/><path d="M8 5v3.5l2 1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div class="demo-point-text">
+        <strong>Response within one business day</strong>
+        <span>You'll hear from us directly — not a scheduling bot, not an SDR queue.</span>
       </div>
     </div>
   </div>
@@ -165,83 +168,126 @@
         <textarea id="df-challenge" name="challenge" placeholder="e.g. We keep getting surprised by refrigerant adds, we had a leak that cost us $15k, we need audit records for an upcoming inspection..." rows="3"></textarea>
       </div>
       <input type="hidden" name="_subject" value="Kelvex Demo Request" />
-      <button type="submit" class="btn-primary btn-full">Request a demo →</button>
+      <button type="submit" class="btn btn-primary btn-full btn-lg">Book my demo <span class="arr">→</span></button>
       <p class="form-note">We respond within one business day.</p>
     </form>
   </div>
 </div>
 
-<!-- ── Footer ────────────────────────────────────────────── -->
-<footer class="footer">
-  <div class="container footer-inner">
-    <div class="footer-brand">
-      <a href="/" class="nav-logo" style="color:#0f172a;">
-        <svg width="24" height="24" viewBox="0 0 64 64" fill="none">
-          <path d="M32 4L56 18V46L32 60L8 46V18L32 4Z" fill="#0f172a"/>
-          <path d="M22 17V47" stroke="white" stroke-width="5.5" stroke-linecap="round"/>
-          <path d="M22 32L44 17" stroke="white" stroke-width="5.5" stroke-linecap="round"/>
-          <path d="M22 32L44 47" stroke="white" stroke-width="5.5" stroke-linecap="round"/>
-          <circle cx="22" cy="32" r="5" fill="#0369ea"/>
+<!-- FOOTER -->
+<footer>
+  <div class="container foot-main">
+    <div class="foot-brand">
+      <a href="/" aria-label="Kelvex home" style="text-decoration:none">
+        <svg width="124" height="28" viewBox="0 0 186 42" role="img" aria-label="Kelvex">
+          <text x="0" y="26" font-family="Space Grotesk" font-weight="600" font-size="30" letter-spacing="1.1" fill="#E8EDF8">KELVEX</text>
+          <line x1="1" y1="37" x2="178" y2="37" stroke="#E8EDF8" stroke-width="1.4"/>
+          <line x1="141" y1="29" x2="141" y2="37" stroke="#2563EB" stroke-width="1.4"/>
+          <rect x="137.5" y="25.5" width="7" height="7" fill="#2563EB"/>
         </svg>
-        Kelvex
       </a>
-      <p>Refrigeration monitoring, leak detection, and compliance for grocery stores and cold-storage warehouses.</p>
+      <p>Refrigeration monitoring, leak detection, and compliance records for grocery stores and cold-storage warehouses.</p>
     </div>
-    <div class="footer-cols">
-      <div class="footer-col">
-        <div class="footer-col-head">Product</div>
-        <a href="/#platform">Platform</a>
-        <a href="/#how-it-works">How it works</a>
-        <a href="/#integrations">Connectivity</a>
-        <a href="https://app.kelvex.io">Dashboard</a>
-      </div>
-      <div class="footer-col">
-        <div class="footer-col-head">Company</div>
-        <a href="demo.html">Book a demo</a>
-        <a href="/#contact">Contact</a>
-        <a href="demo.html">Partnerships</a>
-      </div>
+    <div class="foot-col">
+      <div class="foot-col-head">Product</div>
+      <a href="/#tour">Leak detection</a>
+      <a href="/#tour">Compliance records</a>
+      <a href="/#tour">Alerts &amp; monitoring</a>
+      <a href="/#tour">Energy analytics</a>
+      <a href="/#compare">Why Kelvex</a>
+    </div>
+    <div class="foot-col">
+      <div class="foot-col-head">Solutions</div>
+      <a href="/#solutions">Grocery stores</a>
+      <a href="/#solutions">Cold storage &amp; 3PL</a>
+      <a href="/#solutions">Contractors</a>
+      <a href="/#regimes">AIM Act compliance</a>
+      <a href="/#regimes">OSHA PSM</a>
+    </div>
+    <div class="foot-col">
+      <div class="foot-col-head">Company</div>
+      <a href="/demo">Book a demo</a>
+      <a href="/demo">Contact</a>
+      <a href="https://app.kelvex.io">Sign in</a>
+      <a href="/#roi">ROI calculator</a>
+      <a href="/#faq">FAQ</a>
+    </div>
+    <div class="foot-news">
+      <div class="foot-col-head">Compliance updates</div>
+      <p>AIM Act deadlines and refrigerant-rule changes, explained monthly. No spam.</p>
+      <form name="newsletter" method="POST" data-netlify="true" id="news-form">
+        <input type="hidden" name="form-name" value="newsletter">
+        <input type="email" name="email" placeholder="you@company.com" required aria-label="Email address">
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+      </form>
+      <p class="nn">Unsubscribe anytime.</p>
     </div>
   </div>
-  <div class="container footer-bar">
+  <div class="container foot-bar">
     <p>© 2026 Kelvex. All rights reserved.</p>
+    <p class="made">MADE FOR THE COLD CHAIN · KELVIN, MEASURED</p>
   </div>
 </footer>
 
 <script>
-const nav = document.getElementById('nav')
-const hamburger = document.getElementById('hamburger')
-const drawer = document.getElementById('drawer')
+(function(){
+  var nav = document.getElementById('nav'), progress = document.getElementById('progress');
+  function onScroll(){
+    var y = window.scrollY, max = document.documentElement.scrollHeight - window.innerHeight;
+    nav.classList.toggle('scrolled', y > 8);
+    progress.style.width = (max > 0 ? (y / max) * 100 : 0) + '%';
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
 
-hamburger.addEventListener('click', () => drawer.classList.toggle('open'))
-drawer.querySelectorAll('a').forEach(a => a.addEventListener('click', () => drawer.classList.remove('open')))
+  var hamburger = document.getElementById('hamburger'), drawer = document.getElementById('drawer');
+  hamburger.addEventListener('click', function(){
+    var open = drawer.classList.toggle('open');
+    hamburger.setAttribute('aria-expanded', open);
+  });
+  drawer.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){ drawer.classList.remove('open'); });
+  });
 
-const form = document.getElementById('demo-form')
-if (form) {
-  form.addEventListener('submit', async (e) => {
-    e.preventDefault()
-    const btn = form.querySelector('[type="submit"]')
-    const orig = btn.textContent
-    btn.textContent = 'Sending...'
-    btn.disabled = true
-    try {
-      const res = await fetch('/', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams(new FormData(form)).toString()
-      })
-      if (res.ok) {
-        form.innerHTML = '<div class="form-success"><div class="form-success-icon">✓</div><h3>Thanks — we\'ll be in touch.</h3><p>Expect a reply within one business day. We\'ll reach out to find a time that works and review your equipment details beforehand.</p></div>'
+  var form = document.getElementById('demo-form');
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var btn = form.querySelector('[type="submit"]');
+    var orig = btn.innerHTML;
+    btn.textContent = 'Sending...';
+    btn.disabled = true;
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams(new FormData(form)).toString()
+    }).then(function(res){
+      if (res.ok){
+        form.innerHTML = '<div class="form-success"><div class="form-success-icon">✓</div><h3>Thanks — we\'ll be in touch.</h3><p>Expect a reply within one business day. We\'ll reach out to find a time that works and review your equipment details beforehand.</p></div>';
       } else {
-        btn.textContent = orig
-        btn.disabled = false
+        btn.innerHTML = orig;
+        btn.disabled = false;
       }
-    } catch {
-      btn.textContent = orig
-      btn.disabled = false
-    }
-  })
-}
+    }).catch(function(){
+      btn.innerHTML = orig;
+      btn.disabled = false;
+    });
+  });
+
+  var nf = document.getElementById('news-form');
+  if (nf) nf.addEventListener('submit', function(e){
+    e.preventDefault();
+    var btn = nf.querySelector('button');
+    btn.textContent = '...';
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams(new FormData(nf)).toString()
+    }).then(function(res){
+      if (res.ok){ nf.innerHTML = '<p style="color:#8FE3BC;font-size:14px;font-weight:600">✓ Subscribed — see you next month.</p>'; }
+      else { btn.textContent = 'Subscribe'; }
+    }).catch(function(){ btn.textContent = 'Subscribe'; });
+  });
+})();
 </script>
 </body>
 </html>
